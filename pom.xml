@@ -4,4 +4,5 @@
   <artifactId>oca-java-se-programmer</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>OCA excercises</name>
+  <description>Java OCA excercises</description
 </project>
