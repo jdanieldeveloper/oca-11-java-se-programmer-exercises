@@ -1,4 +1,4 @@
-package com.troytech.oca8.part1;
+package com.troytech.oca11.part1;
 
 /**
  * What is the result?
@@ -12,7 +12,7 @@ package com.troytech.oca8.part1;
  */
 public class Q6 {
 	public static void main(String[] args) {
-		StringBuilder message = new StringBuilder("hello java!");
+		StringBuilder message = new StringBuilder("hello java! ");
 		int pos = 0;
 		try {
 			for (pos = 0; pos < 12; pos++) {

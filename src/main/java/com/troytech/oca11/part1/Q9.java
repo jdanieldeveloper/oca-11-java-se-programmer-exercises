@@ -1,4 +1,4 @@
-package com.troytech.oca8.part1;
+package com.troytech.oca11.part1;
 
 public class Q9 {
 	
@@ -14,8 +14,11 @@ public class Q9 {
 	 * 
 	 */
 	public static void main(String[] args) {
-		
 
+	}
+
+	public void methodWIthOutReturnValue() {
+		return; // and here too It can be empty :-)
 	}
 
 }

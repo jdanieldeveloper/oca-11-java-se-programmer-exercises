@@ -1,7 +1,7 @@
-package com.troytech.oca8.part1.q3.p3;
+package com.troytech.oca11.part1.q3.p3;
 
-import com.troytech.oca8.part1.q3.p2.DoClass;
-import com.troytech.oca8.part1.q3.p1.DoInterface;
+import com.troytech.oca11.part1.q3.p2.DoClass;
+import com.troytech.oca11.part1.q3.p1.DoInterface;
 
 
 /**
@@ -17,7 +17,7 @@ import com.troytech.oca8.part1.q3.p1.DoInterface;
  * protected constructor fail
  *
  */
-public class Test {
+public class Q3 {
 
 	public static void main(String[] args) {
 		DoInterface doi = new DoClass();

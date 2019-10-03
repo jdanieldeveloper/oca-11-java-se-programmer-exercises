@@ -1,4 +1,4 @@
-package com.troytech.oca8.part1;
+package com.troytech.oca11.part1;
 
 /**
  * 
@@ -7,7 +7,7 @@ package com.troytech.oca8.part1;
  * A. String str2 = str1;
  * B. String str2 = new string (str1);
  * C. String str2 = sb1.toString();
- * D. String str2 = “Duke”;
+ * D. String str2 = ï¿½Dukeï¿½;
  * 
  * Answer: A
  */

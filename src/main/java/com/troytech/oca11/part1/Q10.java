@@ -1,4 +1,4 @@
-package com.troytech.oca8.part1;
+package com.troytech.oca11.part1;
 
 /**
  * Which statement, when inserted into line 5, is valid change?
@@ -6,7 +6,9 @@ package com.troytech.oca8.part1;
  * A. asc = sc;
  * B. sc = asc;
  * C. asc = (object) sc;
- * D. asc = sc.clone ()
+ * D. asc = sc.clone()
+ *
+ * Answer: B
  * 
  */
 public class Q10 {
@@ -15,7 +17,7 @@ public class Q10 {
 		AnotherSampleClass asc = new AnotherSampleClass();
 		SampleClass sc = new SampleClass();
 		//answer
-		sc = asc;		
+		sc = asc;
 	}
 }
 

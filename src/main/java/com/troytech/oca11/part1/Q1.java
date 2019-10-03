@@ -1,4 +1,4 @@
-package com.troytech.oca8.part1;
+package com.troytech.oca11.part1;
 
 public class Q1 {
 	
@@ -24,9 +24,13 @@ public class Q1 {
 		for(int i = 0; i < 1; ) {
 			System.out.print("-> " + i);
 		}
+
+		//It's Ok
+		for( ; ; ) {
+
+		}
 		
 		//The correct answer is A, B, C
-		
 		
 	}
 

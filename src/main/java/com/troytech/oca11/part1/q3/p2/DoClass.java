@@ -1,6 +1,6 @@
-package com.troytech.oca8.part1.q3.p2;
+package com.troytech.oca11.part1.q3.p2;
 
-import com.troytech.oca8.part1.q3.p1.DoInterface;
+import com.troytech.oca11.part1.q3.p1.DoInterface;
 
 public class DoClass implements DoInterface {	
 	int x1, x2;
