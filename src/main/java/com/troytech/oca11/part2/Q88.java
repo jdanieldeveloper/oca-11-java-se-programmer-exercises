@@ -1,19 +1,23 @@
 package com.troytech.oca11.part2;
 
-public class Q87 {
+class Series{
+	private  boolean flag;
 
+	public void displaySeries() {
+		int num = 2;
+		while(flag) {
+			if(num % 7 == 0)
+				flag = false;
+			System.out.print(num);
+			num += 2;
+		}
+	}
+}
+
+public class Q88 {
 	 public static void main(String args[]) {
-	 	int num = 5;
-	 	int sum;
-
-	 	do {
-	 		sum += num;
-		} while ((num--) > 1);
-	}
-
-	public void myMethodWithPrimitives(){
-	 	int var1 = 10;
-	}
+		new Series().displaySeries();
+	 }
 }
 
 

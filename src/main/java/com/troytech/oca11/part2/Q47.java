@@ -13,21 +13,19 @@ package com.troytech.oca11.part2;
  *
  */
 
-public class Q37 {
+public class Q47 {
 
-	public static void doChange(int[] arr) {
-		for(int pos = 0; pos < arr.length; pos++){
-			arr[pos] = arr[pos] + 1;
+	public static void main(String args[]) {
+		String str1 = "Java";
+		char str2[] = {'J', 'a', 'v', 'a'};
+		String str3 = null;
+		for(char c : str2) {
+			str3 = str3 + c;
 		}
+		if(str1.equals(str3))
+			System.out.print("Sucessful");
+		else
+			System.out.print("Unsucessful");
 	}
 
-	public static void main(String[] args) {
-		int[] arr = {10, 20, 30};
-		doChange(arr);
-		for(int x : arr){
-			System.out.print(x + " ");
-		}
-
-		//doChange(arr[0], arr[1], arr[2]);
-	}
 }

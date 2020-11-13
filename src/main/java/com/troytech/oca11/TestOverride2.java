@@ -1,37 +1,16 @@
 package com.troytech.oca11;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.io.IOException;
 
-public class TestOverride {
+public class TestOverride2 {
 
-    class Base {
+    void process(int a, String str){return;}
 
-        // Overrride
-        public <T>ArrayList<T> processList(List<T> list) {
-            return null;
-        }
+    //public void process(int a, String str) {return;} // it's the same
 
-        // Overload
-        public <T>ArrayList<T> processList(ArrayList<T> list) { // add ArrayList type
-            return null;
-        }
+    //void process(int a, String str) throws IOException {return;} // it's the same
 
-        // Overload
-        public <T>ArrayList<T>processList(LinkedList<T> list){ // add LinkedList type
-            return null;
-        }
-    }
+    //private String process(int a, String str){return null;} //permit
 
-    class subClass extends Base {
-        @Override
-        public <T> ArrayList<T> processList(List<T> list) {
-            return null;
-        }
-    }
-
-    public static void main(String args[]) {
-        //TODO
-    }
+    //String process(int a, String str){return null;} // permit
 }

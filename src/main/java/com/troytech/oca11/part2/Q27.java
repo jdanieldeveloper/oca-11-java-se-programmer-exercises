@@ -1,8 +1,5 @@
 package com.troytech.oca11.part2;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * What is the result?
  *
@@ -16,33 +13,15 @@ import java.util.List;
  *
  */
 
-class Alpha {
-	public String doStuff(String msg){
-		return msg;
-	}
-}
-
-class Beta extends Alpha {
-	public String doStuff(String msg){
-		return msg.replace('a', 'e');
-	}
-}
-
-class Gamma extends Beta {
-	public String doStuff(String msg){
-		return msg.substring(2);
-	}
-}
-
-public class Q21 {
+public class Q27 {
 
 	public static void main(String[] args) {
-		List<Alpha> strs = new ArrayList<Alpha>();
-		strs.add(new Alpha());
-		strs.add(new Beta());
-		strs.add(new Gamma());
-		for(Alpha t : strs) {
-			System.out.print(t.doStuff("Java"));
-		}
+		int a = -10;
+		int b = 17;
+		int c = ++a;
+		int d = b--;
+		c++;
+		d--;
+		System.out.print(c + ", " + d);
 	}
 }

@@ -1,28 +1,21 @@
 package com.troytech.oca11.part2;
 
-import java.util.ArrayList;
-import java.util.List;
+class Marklist {
+	int num;
 
-interface Contract {}
-class Super implements Contract {}
-class Sub extends Super{}
+	public static void graceMarks(Marklist obj4) {
+		obj4.num += 10;
+	}
+}
 
-public class Q81 {
+public class Q82 {
 
 	 public static void main(String args[]) {
-		 List objs = new ArrayList();
-
-		 Contract c1 = new Super();
-		 Contract c2 = new Sub();
-		 Super s1 = new Sub();
-
-		 objs.add(c1);
-		 objs.add(c2);
-		 objs.add(s1);
-
-		 for(Object item : objs){
-		 	System.out.println(item.getClass().getSimpleName());
-		 }
+		 Marklist obj1 = new Marklist();
+		 Marklist obj2 = obj1;
+		 Marklist obj1 = null;
+		 obj2.num = 60;
+		 obj1.graceMarks(obj2);
 	}
 }
 

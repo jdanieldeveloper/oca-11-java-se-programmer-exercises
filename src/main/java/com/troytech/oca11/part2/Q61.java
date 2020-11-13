@@ -1,43 +1,18 @@
 package com.troytech.oca11.part2;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-interface SampleClosable { public void close () throws java.io.IOException; }
-
-class SampleImplement1 implements  SampleClosable {
-	@Override
-	public void close() throws IOException {
-
-	}
-}
-
-//bad
-/*class SampleImplement2 implements  SampleClosable {
-	@Override
-	public void close() throws Exception {
-
-	}
-}*/
-
-class SampleImplement3 implements  SampleClosable {
-	@Override
-	public void close() throws FileNotFoundException {
-
-	}
-}
-
-class SampleImplement4 implements  SampleClosable {
-	@Override
-	public void close() {
-
-	}
-}
-
-
-public class Q60 {
+public class Q61 {
 
 	public static void main(String args[]) {
+		int numbers[];
+		numbers = new int[2];
+		numbers[0] = 10;
+		numbers[1] = 20;
 
+		numbers = new int[4];
+		numbers[2] = 30;
+		numbers[3] = 40;
+		for(int x : numbers) {
+			System.out.print(" " + x);
+		}
 	}
 }

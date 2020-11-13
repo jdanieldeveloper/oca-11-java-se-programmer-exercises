@@ -2,39 +2,42 @@ package com.troytech.oca11.part2;
 
 
 /**
- * What is the reference type of myZ and what is the type of the object it references?
+ * What is the result?
  *
  *
- * A. Reference type is Z; object type is Z.
- * B. Reference type is Y; object type is Y.
- * C. Reference type is Z; object type is Y.
- * D. Reference type is X; object type is Z.
+ * A. Red 0 Orange 0 Green 3
+ * B. Red 0 Orange 0 Green 6
+ * C. Red 0 Orange 1
+ * D. Green 4
+ * E. Compilation fails
  *
  *
- * Answer: C
+ * Answer: E
  *
  */
 
-class X implements Z {
-	public String toString() {
-		return "I am X";
+
+class Test {
+	int sum = 0;
+	public void doCheck(int number){
+		if(number % 2 == 0){
+			break;
+		} else {
+			for(int i = 0; i < number; i++){
+				sum += i;
+			}
+		}
 	}
 }
 
-public class Q3 {
+public class Q5 {
 
 	public static void main(String[] args) {
-		Y myY = new Y();
-		X myX = myY;
-		Z myZ = myX;
-		System.out.print(myZ);
+		Test obj = new Test();
+		System.out.print("Red " + obj.sum);
+		obj.doCheck(2);
+		System.out.print("Orange " + obj.sum);
+		obj.doCheck(3);
+		System.out.print("Green " + obj.sum);
 	}
 }
-
-class Y extends X {
-	public String toString() {
-		return "I am Y";
-	}
-}
-
-interface  Z {}

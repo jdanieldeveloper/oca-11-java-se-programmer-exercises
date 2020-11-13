@@ -1,9 +1,9 @@
-package com.troytech.oca11;
+package com.troytech.oca11.part3;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class TestException {
+public class Q7 {
 
     public static void main(String args[]) {
         try {

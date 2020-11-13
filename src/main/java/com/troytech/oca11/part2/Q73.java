@@ -1,11 +1,28 @@
 package com.troytech.oca11.part2;
 
-public class Q69 {
+class XX {
+	public void mX(){
+		System.out.println("Xm1 ");
+	}
+}
+
+class YY extends XX {
+	public void mX() {
+		System.out.print("Xm2 ");
+	}
+	public void mY() {
+		System.out.print("Ym ");
+	}
+}
+
+
+
+public class Q73 {
 
 	public static void main(String args[]) {
-		StringBuilder sb = new StringBuilder("1Z0");
-
-		String st = new String();
-
+		XX xRef = new YY();
+		YY yRef = (YY) xRef;
+		yRef.mY();
+		xRef.mX();
 	}
 }

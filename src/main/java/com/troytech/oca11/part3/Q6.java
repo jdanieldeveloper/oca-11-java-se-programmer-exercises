@@ -2,7 +2,7 @@ package com.troytech.oca11.part3;
 
 import java.util.Arrays;
 
-public class TestArrays {
+public class Q6 {
 
     public static void main(String args[]) {
         int[] secA = {2, 4, 6, 8, 10};

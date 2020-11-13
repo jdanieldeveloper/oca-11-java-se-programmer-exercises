@@ -1,6 +1,5 @@
 package com.troytech.oca11.part2;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,21 +15,34 @@ import java.util.List;
  * Answer: B
  *
  */
-public class Q9 {
+
+class Alpha {
+	public String doStuff(String msg){
+		return msg;
+	}
+}
+
+class Beta extends Alpha {
+	public String doStuff(String msg){
+		return msg.replace('a', 'e');
+	}
+}
+
+class Gamma extends Beta {
+	public String doStuff(String msg){
+		return msg.substring(2);
+	}
+}
+
+public class Q21 {
 
 	public static void main(String[] args) {
-		int[] array = {1, 2, 3, 4, 5};
-		for(int i: array){
-			if(i < 2){
-				continue;
-			}
-			System.out.print(i);
-			if(i == 3){
-				continue;
-			}
+		List<Alpha> strs = new ArrayList<Alpha>();
+		strs.add(new Alpha());
+		strs.add(new Beta());
+		strs.add(new Gamma());
+		for(Alpha t : strs) {
+			System.out.print(t.doStuff("Java"));
 		}
-
-		List<Integer> integer = new ArrayList<>();
-		integer.removeIf(e -> e % 2 == 0);
 	}
 }

@@ -1,36 +1,36 @@
-package com.troytech.oca11.part1;
+package com.troytech.oca11.part2;
 
+
+import java.util.Arrays;
+
+/**
+ * What is the result?
+ *
+ *
+ * A. – 6
+ * B. – 4
+ * C. – 5
+ * D. 5
+ * E. 4
+ * F. Compilation fails
+ *
+ * Answer: C
+ *
+ */
 public class Q1 {
-	
-	/**
-	 * Which three code fragments, when replaced individually for foo, enables the program to compile?
-	 * 
-	 * A. int i : array
-	 * B. int i = 0; i < 1;
-	 * C. ; ;
-	 * D. ; i < 1; i++
-	 * E. i = 0; i<1;
-	 * 
-	 */
+
 	public static void main(String[] args) {
-		int[] array = {1, 2, 3};
-		
-		//It's Ok
-		for(int i : array) {
-			System.out.print("-> " + i);
+		int var1 = -5;
+		int var2 = var1--;
+		int var3 = 0;
+		if(var2 < 0) {
+			var3 = var2++;
+		}else{
+			var3 = --var2;
 		}
-		
-		//It's Ok
-		for(int i = 0; i < 1; ) {
-			System.out.print("-> " + i);
-		}
+		System.out.print(var3);
 
-		//It's Ok
-		for( ; ; ) {
 
-		}
-		
-		//The correct answer is A, B, C
 		
 	}
 

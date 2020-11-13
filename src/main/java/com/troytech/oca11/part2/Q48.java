@@ -13,19 +13,23 @@ package com.troytech.oca11.part2;
  *
  */
 
-public class Q47 {
+public class Q48 {
+	int x(double d) {
+		System.out.println("one");
+		return 0;
+	}
+
+	String x(double d) {
+		System.out.println("two");
+		return null;
+	}
+
+	double x(double d) {
+		System.out.println("three"); return 0.0;
+	}
 
 	public static void main(String args[]) {
-		String str1 = "Java";
-		char str2[] = {'J', 'a', 'v', 'a'};
-		String str3 = null;
-		for(char c : str2) {
-			str3 = str3 + c;
-		}
-		if(str1.equals(str3))
-			System.out.print("Sucessful");
-		else
-			System.out.print("Unsucessful");
+		new Q48().x(4.0);
 	}
 
 }

@@ -1,13 +1,20 @@
 package com.troytech.oca11.part3;
 
-public class Q21 {
+import java.util.ArrayList;
 
-    public static void main(String[] args) {
-        StringBuilder s = new StringBuilder("ABCD");
+class Employee {
+    String office;
+}
 
-        s.replace(s.indexOf("B"), s.indexOf("B"), "Q");
-
-        System.out.print(s);
-
+public class Q22 {
+    var employee = new ArrayList<Employee>();
+        public var display(){
+            var employee = new Employee();
+            var offices = new ArrayList<>();
+            offices.add("Chicago");
+            offices.add("Bangalore");
+            for(var office : offices ){
+                System.out.print("Employee Location : " + office);
+            }
     }
 }

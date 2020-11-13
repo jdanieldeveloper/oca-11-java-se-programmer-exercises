@@ -13,15 +13,28 @@ package com.troytech.oca11.part2;
  *
  */
 
-public class Q27 {
+public class Q29 {
 
 	public static void main(String[] args) {
-		int a = -10;
-		int b = 17;
-		int c = ++a;
-		int d = b--;
-		c++;
-		d--;
-		System.out.print(c + ", " + d);
+		String[] colors = {"red", "blue", "green", "yellow", "maroon", "cyan"};
+
+		for(String c : colors ){
+			if(c.length() != 4){
+				continue;
+			}
+			System.out.print(c + ", ");
+		}
+
+		int row = 10;
+		for( ; row > 0; )  {
+
+		}
+
+		//int[] multobject = new int [5];
+		//multobject.
+
+		int i= 0;
+
+
 	}
 }

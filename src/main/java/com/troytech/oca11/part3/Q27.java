@@ -1,13 +1,7 @@
 package com.troytech.oca11.part3;
 
-public class Q26 {
+public class Q27 {
     public static void main(String[] args) {
-        char[][] arrays = {{'a', 'd'}, {'b', 'e'}, {'c', 'f'}};
-        for(char[] xx : arrays){
-            for(char yy : xx) {
-                System.out.print(yy);
-            }
-            System.out.print(" ");
-        }
+        System.out.print(args[0] + args[1] + args[2]);
     }
 }

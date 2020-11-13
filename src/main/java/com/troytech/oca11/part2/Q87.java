@@ -1,21 +1,18 @@
 package com.troytech.oca11.part2;
 
-class Marklist {
-	int num;
-
-	public static void graceMarks(Marklist obj4) {
-		obj4.num += 10;
-	}
-}
-
-public class Q82 {
+public class Q87 {
 
 	 public static void main(String args[]) {
-		 Marklist obj1 = new Marklist();
-		 Marklist obj2 = obj1;
-		 Marklist obj1 = null;
-		 obj2.num = 60;
-		 obj1.graceMarks(obj2);
+	 	int num = 5;
+	 	int sum;
+
+	 	do {
+	 		sum += num;
+		} while ((num--) > 1);
+	}
+
+	public void myMethodWithPrimitives(){
+	 	int var1 = 10;
 	}
 }
 

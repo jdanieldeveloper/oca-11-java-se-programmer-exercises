@@ -15,6 +15,7 @@ public class Q97 {
         System.out.print(isAvailable + " ");
         isAvailable = t.doStuff();
         System.out.print(isAvailable);
+
     }
 
     public static boolean doStuff(){

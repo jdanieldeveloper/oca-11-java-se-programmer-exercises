@@ -1,6 +1,9 @@
 package com.troytech.oca11.part2;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * What is the result?
  *
@@ -13,22 +16,21 @@ package com.troytech.oca11.part2;
  * Answer: B
  *
  */
-public class Q8 {
+public class Q9 {
 
 	public static void main(String[] args) {
-		int arr[] = new int[4];
-		arr[0] = 1;
-		arr[1] = 2;
-		arr[2] = 4;
-		arr[3] = 5;
-		int sum = 0;
-		try {
-			for (int pos = 0; pos <= 4; pos++) { sum = sum + arr[pos];
+		int[] array = {1, 2, 3, 4, 5};
+		for(int i: array){
+			if(i < 2){
+				continue;
 			}
-		} catch (Exception e) { System.out.println("Invalid index");
-		} System.out.println(sum);
-	}
-		
-	}
+			System.out.print(i);
+			if(i == 3){
+				continue;
+			}
+		}
 
+		List<Integer> integer = new ArrayList<>();
+		integer.removeIf(e -> e % 2 == 0);
+	}
 }

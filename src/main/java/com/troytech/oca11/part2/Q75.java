@@ -1,28 +1,19 @@
 package com.troytech.oca11.part2;
 
-class XX {
-	public void mX(){
-		System.out.println("Xm1 ");
-	}
-}
-
-class YY extends XX {
-	public void mX() {
-		System.out.print("Xm2 ");
-	}
-	public void mY() {
-		System.out.print("Ym ");
-	}
-}
-
-
-
-public class Q73 {
+public class Q75 {
 
 	public static void main(String args[]) {
-		XX xRef = new YY();
-		YY yRef = (YY) xRef;
-		yRef.mY();
-		xRef.mX();
+		String s = "A";
+
+		switch (s) {
+			case "a":
+				System.out.print("simaple A");
+			default:
+				System.out.print("default");
+			case "A":
+				System.out.print("Capital A");
+			//case "B":
+				//System.out.print("simaple B");
+		}
 	}
 }

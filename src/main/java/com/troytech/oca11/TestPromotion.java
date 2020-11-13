@@ -1,4 +1,4 @@
-package com.troytech.oca11.part2;
+package com.troytech.oca11;
 
 public class TestPromotion {
 

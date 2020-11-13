@@ -1,18 +1,21 @@
 package com.troytech.oca11.part2;
 
-class SampleClass {}
+import java.time.LocalTime;
 
-public class Q76 {
+public class Q77 {
 
-	public static void main(String args[]) {
-		AnotherSampleClass asc = new AnotherSampleClass();
-		SampleClass sc = new SampleClass();
-		sc = asc;
-		System.out.print("sc: " + sc.getClass());
-		System.out.print(" |  ");
-		System.out.print("asc:" + asc.getClass());
-
+	 public static void main(String args[]) {
+		String[] table = {"aa", "bb", "cc"};
+		for(String ss: table){
+			int ii = 0;
+			while(ii < table.length){
+				System.out.println(ii);
+				ii++;
+				break;
+			}
+			System.out.println("-----------------------------------");
+		}
 	}
 }
 
-class AnotherSampleClass extends SampleClass {}
+

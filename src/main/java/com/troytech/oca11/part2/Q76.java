@@ -1,19 +1,18 @@
 package com.troytech.oca11.part2;
 
-public class Q75 {
+class SampleClass {}
+
+public class Q76 {
 
 	public static void main(String args[]) {
-		String s = "A";
+		AnotherSampleClass asc = new AnotherSampleClass();
+		SampleClass sc = new SampleClass();
+		sc = asc;
+		System.out.print("sc: " + sc.getClass());
+		System.out.print(" |  ");
+		System.out.print("asc:" + asc.getClass());
 
-		switch (s) {
-			case "a":
-				System.out.print("simaple A");
-			default:
-				System.out.print("default");
-			case "A":
-				System.out.print("Capital A");
-			//case "B":
-				//System.out.print("simaple B");
-		}
 	}
 }
+
+class AnotherSampleClass extends SampleClass {}

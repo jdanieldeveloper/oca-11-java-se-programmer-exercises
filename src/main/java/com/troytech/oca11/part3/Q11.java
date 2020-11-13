@@ -1,15 +1,11 @@
 package com.troytech.oca11.part3;
 
-public class Q9 {
+public class Q11 {
 
     public static void main(String args[]) {
-        StringBuilder sb = new StringBuilder(5);
-        sb.append("HOWDY");
-        sb.insert(0, ' ');
-        sb.replace(3, 5, "LL");
-        sb.insert(6, "COW");
-        sb.delete(2, 7);
-        System.out.println(sb.length());
+        var i = 10;
+        var j = 5;
+        i+= (j * 5 + j) / i - 2;
+        System.out.print(i);
     }
-
 }

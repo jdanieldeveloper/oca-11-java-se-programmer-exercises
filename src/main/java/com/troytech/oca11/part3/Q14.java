@@ -1,15 +1,8 @@
 package com.troytech.oca11.part3;
 
-interface  EulerInterface {
-    double getEulerValue();
-}
-
-public class Q13 {
+public class Q14 {
 
     public static void main(String args[]) {
-        EulerInterface myEulerInterface;
-        myEulerInterface = () -> "2.71828";
-
-        System.out.println("Value of Euler = " + myEulerInterface.getEulerValue());
+        System.out.println(args[1] + "--" + args[3] + "--" + args[0]);
     }
 }

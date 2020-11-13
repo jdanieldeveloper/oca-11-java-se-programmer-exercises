@@ -2,36 +2,48 @@ package com.troytech.oca11.part2;
 
 
 /**
- * What is the result?
+ * A. line 3
+ * B. line 4
+ * C. line 5
+ * D. line 6
+ * E. line 10
+ * F. line 11
+ * G. line 12
+ * H. line 13
+ *
+ * Answer: C, D, H
  *
  *
- * A. c = null b = false f = 0.0F
- * B. c = 0 b = false f = 0.0f
- * C. c = null b = true f = 0.0
- * D. c = b = false f = 0.0
- *
- * Answer: D
+ * Answer: C
  *
  */
 
-class FieldInit {
-	char c;
-	boolean b;
-	float f;
-
-	void printAll(){
-		System.out.println("c = " + c);
-		System.out.println("b = " + b);
-		System.out.println("f = " + f);
+class StaticMethods {
+	static void one() {
+		two();
+		StaticMethods.two();
+		three();
+		StaticMethods.four();
 	}
+
+	static void two() {}
+
+	void three(){
+		one();
+		StaticMethods.two();
+		three();
+		StaticMethods.four();
+	}
+
+	void four() { }
 }
 
-public class Q2 {
+public class Q4 {
 
 	public static void main(String[] args) {
-		FieldInit f = new FieldInit();
-		f.printAll();
-		
+		Y myY = new Y();
+		X myX = myY;
+		Z myZ = myX;
+		System.out.print(myZ);
 	}
-
 }

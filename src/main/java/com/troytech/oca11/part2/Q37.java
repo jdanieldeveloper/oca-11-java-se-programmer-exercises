@@ -13,28 +13,21 @@ package com.troytech.oca11.part2;
  *
  */
 
-public class Q29 {
+public class Q37 {
+
+	public static void doChange(int[] arr) {
+		for(int pos = 0; pos < arr.length; pos++){
+			arr[pos] = arr[pos] + 1;
+		}
+	}
 
 	public static void main(String[] args) {
-		String[] colors = {"red", "blue", "green", "yellow", "maroon", "cyan"};
-
-		for(String c : colors ){
-			if(c.length() != 4){
-				continue;
-			}
-			System.out.print(c + ", ");
+		int[] arr = {10, 20, 30};
+		doChange(arr);
+		for(int x : arr){
+			System.out.print(x + " ");
 		}
 
-		int row = 10;
-		for( ; row > 0; )  {
-
-		}
-
-		//int[] multobject = new int [5];
-		//multobject.
-
-		int i= 0;
-
-
+		//doChange(arr[0], arr[1], arr[2]);
 	}
 }

@@ -1,34 +1,15 @@
 package com.troytech.oca11.part3;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-public class Q7 {
+public class Q9 {
 
     public static void main(String args[]) {
-        try {
-            doA();
-            doB();
-        } catch (IOException e) {
-            System.out.print("c");
-            return;
-        } finally {
-            System.out.print("d");
-        }
-        System.out.print("f");
+        StringBuilder sb = new StringBuilder(5);
+        sb.append("HOWDY");
+        sb.insert(0, ' ');
+        sb.replace(3, 5, "LL");
+        sb.insert(6, "COW");
+        sb.delete(2, 7);
+        System.out.println(sb.length());
     }
 
-    private static void doA() {
-        System.out.print("a");
-        if(false){
-            throw new IndexOutOfBoundsException();
-        }
-    }
-
-    private static void doB() throws FileNotFoundException {
-        System.out.print("b");
-        if(true){
-            throw new FileNotFoundException();
-        }
-    }
 }

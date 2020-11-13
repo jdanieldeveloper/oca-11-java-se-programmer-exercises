@@ -1,19 +1,13 @@
 package com.troytech.oca11.part3;
 
-public class Q20 {
+public class Q21 {
 
-    interface  Pastry {
-        void getIngredients();
+    public static void main(String[] args) {
+        StringBuilder s = new StringBuilder("ABCD");
+
+        s.replace(s.indexOf("B"), s.indexOf("B"), "Q");
+
+        System.out.print(s);
+
     }
-
-    abstract class Cookie implements Pastry {}
-
-    class ChocolateCookie implements Cookie {
-
-        @Override
-        public void getIngredients() {
-
-        }
-    }
-
 }

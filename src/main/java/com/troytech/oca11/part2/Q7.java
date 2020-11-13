@@ -2,31 +2,21 @@ package com.troytech.oca11.part2;
 
 
 /**
- * What is the result?
+ * A.12
+ * B.01
+ * C.11
+ * D.22
  *
- *
- * A. – 6
- * B. – 4
- * C. – 5
- * D. 5
- * E. 4
- * F. Compilation fails
- *
- * Answer: C
+ * Answer: A
  *
  */
-public class Q1 {
+public class Q7 {
 
 	public static void main(String[] args) {
-		int var1 = -5;
-		int var2 = var1--;
-		int var3 = 0;
-		if(var2 < 0) {
-			var3 = var2++;
-		}else{
-			var3 = --var2;
-		}
-		System.out.print(var3);
+		int a = 0;
+		a++;
+		System.out.printIn(a++);
+		System.out.printIn(a);
 		
 	}
 
